@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor Amarilla</title>
+    <style>
+        /* Estilo para el tallo de la flor */
+        .tallo {
+            width: 10px;
+            height: 100px;
+            background-color: green;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Estilo para el centro de la flor (círculo amarillo) */
+        .centro {
+            width: 40px;
+            height: 40px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Estilo para los pétalos de la flor (ovalos amarillos) */
+        .petalo {
+            width: 80px;
+            height: 40px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Posiciones de los pétalos */
+        .petalo1 { transform: rotate(20deg); }
+        .petalo2 { transform: rotate(60deg); }
+        .petalo3 { transform: rotate(100deg); }
+        .petalo4 { transform: rotate(140deg); }
+        .petalo5 { transform: rotate(180deg); }
+    </style>
+</head>
+<body>
+    <div class="tallo">
+        <div class="centro"></div>
+        <div class="petalo petalo1"></div>
+        <div class="petalo petalo2"></div>
+        <div class="petalo petalo3"></div>
+        <div class="petalo petalo4"></div>
+        <div class="petalo petalo5"></div>
+    </div>
+</body>
+</html>
